@@ -18,7 +18,7 @@ public class ClientProtocol {
 			else 
 				System.out.println("TRY AGAIN. R FOR READER - W FOR WRITER: ");
 		}
-		//login ok
+		//LOGIN OK
 		System.out.println("LOK");
 		
 	}
