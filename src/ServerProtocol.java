@@ -45,6 +45,9 @@ public class ServerProtocol {
 		
 		//splitting in the spaces
 		stuff = theInput.split(" ");
+		//if there are not 3 parts it is wrong
+		if(stuff.length != 3)
+			return "WERR";
 		//check if the flight already exists
 		int i = flightExists(stuff[0]);
 		if(i != -1) {
@@ -78,6 +81,9 @@ public class ServerProtocol {
 		Flight newFlight = null;
 		
 		stuff = theInput.split(" ");
+		//if there are not 3 parts it is wrong
+		if(stuff.length != 3)
+			return "MERR";
 		int i = flightExists(stuff[0]);
 		//if the flight does not exist it is an error else it creates a new Flight and modify the chosen
 		if(i != -1) {
